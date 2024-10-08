@@ -10,7 +10,7 @@ namespace Encapsulation
 	{
 		static void Main(string[] args)
 		{
-			Point A = new Point();
+			Point A = new Point(); 
 			//Console.WriteLine($"X={A.GetX()}\tY={A.GetY()}");
 			//A.SetX(2000);
 			//A.Print();
