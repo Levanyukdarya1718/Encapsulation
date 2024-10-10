@@ -18,6 +18,17 @@ namespace Encapsulation
 			A.X = 22;
 			A.Y = 33;
 			A.Print();
+
+			Point B = new Point();
+			B.X = 10;
+			B.Y = 20;
+			B.Print();
+
+			
+			Console.WriteLine($"Расстояние от точки 'A' до точки 'B': {A.distance(B)}");
+			Console.WriteLine($"Расстояние от точки 'B' до точки 'A': {B.distance(A)}");
+			Console.WriteLine($"Рсстояние между точками 'A' и 'B': {A.distance(A, B)}");
+			Console.WriteLine($"Рсстояние между точками 'B' и 'A': {B.distance(A, B)}");
 		}
 		
 	}

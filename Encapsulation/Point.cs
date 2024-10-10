@@ -42,6 +42,20 @@ namespace Encapsulation
 		//	this.y = y; }
 		public double X { get; set; }
 		public double Y { get; set; }
+		public double distance(Point other)
+		{
+			double x_distance = this.X - other.X;
+			double y_distance = this.Y - other.Y;
+			double distanse = Math.Sqrt(x_distance * x_distance + y_distance * y_distance);
+			return distanse;
+		}
+		public double distance (Point A, Point B )
+		{
+			double distance_x = A.X - B.X;
+			double distance_y = A.Y - B.Y;
+			double distance = Math.Sqrt(distance_x * distance_x + distance_y * distance_y);
+			return distance;
+		}
 		public void Print()
 		{
 			Console.WriteLine($"X={X}\tY={Y}");
